@@ -1,0 +1,137 @@
+.checkout {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: $margin-section;
+  &__heading {
+    font-size: 2rem;
+  }
+  &__content {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-around;
+    //align-items: stretch;
+
+    &-form {
+      flex-grow: 1;
+      &-field {
+        & input,
+        & select {
+          width: 100%;
+          padding: 0.7rem 2rem;
+          border: 1px solid $color-gray-lightest;
+          margin: 0;
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.08rem;
+          color: $color-gray-light;
+          margin-bottom: 1.5rem;
+          outline: none;
+          &::placeholder {
+            color: $color-gray-lightest;
+          }
+          &:focus {
+            border: 1px solid $color-green;
+          }
+        }
+      }
+
+      &-label {
+        font-size: 1.2rem;
+        color: $color-gray-light;
+      }
+      &-required::after {
+        content: " *";
+        color: red;
+      }
+    }
+
+    &-table {
+      color: $color-black;
+      flex-grow: 3;
+      margin: 0 2rem;
+      height: 100%;
+      position: relative;
+      &-order {
+        border: 1px solid $color-gray-light;
+        width: 100%;
+
+        & th,
+        td {
+          font-size: 1.2rem;
+          padding: 0.5rem 1rem;
+        }
+        & th:nth-child(1),
+        & td:nth-child(1) {
+          text-align: left;
+        }
+        & th:nth-child(2),
+        & td:nth-child(2) {
+          text-align: right;
+        }
+
+        & tr:last-child {
+          font-weight: 700;
+          font-size: 3rem;
+        }
+      }
+      &-button {
+        position: absolute;
+        bottom: -5rem;
+        right: 0;
+      }
+    }
+  }
+}
+
+/*
+  width: 80vw;
+  background-color: red;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  &__heading {
+    font-size: 1.4rem;
+  }
+
+  &__form {
+    &-field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label {
+      padding: 0.2rem 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    & input[type="text"],
+    & select {
+      padding: 0.7rem 2rem;
+      width: 100%;
+      border: 1px solid $color-gray-lightest;
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.08rem;
+      color: $color-gray-light;
+      margin-bottom: 1rem;
+      &::placeholder {
+        color: $color-gray-lightest;
+      }
+    }
+
+    &-required::after {
+      content: " *";
+      color: red;
+    }
+  }
+  &__recap {
+    width: 60%;
+    margin-left: 3rem;
+  }
+}
+*/

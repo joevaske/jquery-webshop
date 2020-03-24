@@ -1,0 +1,129 @@
+.main-menu {
+  background-color: $color-white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 1rem 1rem rgba($color-black, 0.1);
+  padding: 2rem 6.4rem;
+  z-index: 2000;
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    padding-top: 2rem;
+  }
+  &__logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    & a {
+      text-decoration: none;
+      color: $color-green;
+      & span {
+        color: $color-gray-light;
+      }
+    }
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+  &__items {
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: $color-white;
+    z-index: 4000;
+    & a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-gray-light;
+    }
+    & a:not(:last-child) {
+      padding-right: 1.6rem;
+    }
+    & a:hover,
+    & a:active {
+      color: $color-green;
+    }
+    @include respond(tab-port) {
+      visibility: hidden;
+      position: absolute;
+      top: 7.7rem;
+      left: 0;
+
+      background-color: $color-black;
+      line-height: 5.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  &__right {
+    font-size: 1.4rem;
+    & a {
+      text-decoration: none;
+      color: $color-gray-light;
+      padding-left: 1.2rem;
+    }
+    &-shopping-chart {
+      position: relative;
+    }
+    &-shopping-chart-number {
+      display: block;
+      position: absolute;
+      text-align: center;
+      padding: -0.2rem;
+      top: -0.6rem;
+      right: -0.8rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      color: $color-white;
+      font-size: 1rem;
+      background-color: $color-green;
+      border-radius: 50%;
+    }
+    &-search {
+      display: none;
+      width: 12rem;
+      border: 1px solid $color-gray-light;
+      border-radius: 0.4rem;
+      padding: 0.5rem;
+      margin-right: -1rem;
+      margin-left: 1rem;
+      animation-name: moveSearch;
+      animation-duration: 0.4s;
+    }
+    &-search:focus {
+      background-color: $color-white;
+      border: 1px solid $color-black;
+      outline: none !important;
+    }
+    &-search-toggle {
+      padding-left: 1.2rem;
+      cursor: pointer;
+    }
+    &-toggle {
+      visibility: hidden;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      padding-left: 1rem;
+      @include respond(tab-port) {
+        visibility: visible;
+      }
+    }
+  }
+}
+//Sticky menu
+.sticky {
+  position: fixed !important;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+//menu items

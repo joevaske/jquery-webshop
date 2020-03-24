@@ -1,0 +1,28 @@
+.static {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: $margin-section;
+  &__box {
+    padding: 1rem 2rem;
+    text-align: center;
+    &-img {
+      margin-bottom: 1rem;
+    }
+    &-heading {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+      color: $color-black;
+    }
+    &-text {
+      font-size: 1.4rem;
+      color: $color-gray-light;
+      text-transform: capitalize;
+    }
+  }
+  &__box:not(:last-child) {
+    margin-right: 2rem;
+  }
+}

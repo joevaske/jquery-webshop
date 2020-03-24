@@ -1,0 +1,64 @@
+.slider {
+  background-color: $color-black;
+  margin-bottom: $margin-section;
+  @include respond(phone) {
+    margin-bottom: $margin-section-phone;
+  }
+
+  &__item {
+    position: relative;
+
+    &-image {
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &-text {
+      position: absolute;
+      width: 40vw;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      animation-name: moveInLeft;
+      animation-duration: 4s;
+      @include respond(tab-port) {
+        width: 60vw;
+        left: 40%;
+      }
+      @include respond(phone) {
+        width: 80vw;
+        left: 50%;
+      }
+      & h1 {
+        color: $color-gray-light;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+        margin-bottom: 1rem;
+        @include respond(phone) {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          margin-bottom: 0.7rem;
+        }
+        & span {
+          color: $color-green;
+        }
+      }
+      & p {
+        color: rgba($color-gray-light, 0.4);
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+        @include respond(phone) {
+          font-size: 1rem;
+          letter-spacing: 0;
+          line-height: 1.1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--Fonts Roboto regullar and Montserrat bold combination-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b28780ce1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>InfoShop</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-menu ">
+        <div class="top-menu__info">
+          <p><i class="fas fa-phone-alt"></i>+387 66 457 001</p>
+
+          <p>
+            <span class="top-menu__info-line"> | </span
+            ><i class="fas fa-envelope"></i> info@infoshop.com
+          </p>
+        </div>
+        <div class="top-menu__social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <nav class="main-menu ">
+        <div class="main-menu__logo">
+          <a href="index.html">INFO<span>SHOP</span></a>
+        </div>
+        <div class="main-menu__items">
+          <a href="index.html">Home</a>
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="kids.html">Kids</a>
+          <a href="jewellery.html">Jewellery</a>
+          <a href="accessories.html">Accessories</a>
+        </div>
+        <div class="main-menu__right">
+          <a class="main-menu__right-shopping-chart" href="cart.html"
+          ><i class="fas fa-shopping-cart cart-item-icon"></i
+          ><span class="main-menu__right-shopping-chart-number cart-item-number">2</span></a
+        >
+          <input
+            class="main-menu__right-search"
+            type="text"
+            placeholder="Search..."
+          />
+
+          <span class="main-menu__right-search-toggle"
+            ><i class="fas fa-search"></i
+          ></span>
+          <span class="main-menu__right-toggle"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </div>
+      </nav>
+    </header>
+    <section class="breadcrumb">
+      <a class="breadcrumb__link" href="#">Home >></a>
+      <a class="breadcrumb__link" href="#">Page >></a>
+      <a class="breadcrumb__link breadcrumb__link-active" href="#">Product</a>
+    </section>
+
+    <section class="product">
+      <div class="product__slider">
+        <div class="product__slider-image">
+          <img id="product-image"
+            src=""
+            alt=""
+          />
+        </div>
+        <div class="product__slider-slide">
+          <div class="product__slider-slide-left">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="product__slider-slide-images">
+         
+          </div>
+          <div class="product__slider-slide-left">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <!--End of product slider-->
+      <div class="product__description">
+        <div class="product__description-text">
+          <span class="product__description-text-name-id id">Nevidljiv</span>
+          <h1 class="product__description-text-name"></h1>
+          <h3 class="product__description-text-price price" >1</h3>
+          <p class="product__description-text-content">
+            Voluptatibus veniam quia est id officia repudiandae quod nisi
+            reiciendis minima, ex error perspiciatis non molestias quibusdam
+            architecto nostrum, tenetur, possimus modi? Adipisci saepe inventore
+            dolorum molestiae cupiditate optio ab magnam deleniti! A labore
+            saepe ab iure corrupti et debitis minima reiciendis, ut quas eos
+            officiis nobis rem delectus ratione voluptas asperiores, alias,
+            veniam sed quae quod. Officia, ullam?
+          </p>
+        </div>
+        <div class="product__description-selector">
+          <form>
+            <label for="size">Select size:</label>
+            <select id="size" class="product__description-selector-size">
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+            <form class="increment-form" id="myform1" method="POST" action="#">
+              <input type="button" value="-" class="qtyminus increment-button" field="quantity" />
+              <input type="text" name="quantity" value="1" class="qty increment-form__input" />
+              <input type="button" value="+" class="qtyplus increment-button" field="quantity" />
+          </form>
+         
+           
+            <h3 class="product__description-selector-total-price" >Total price: <span class="total-price">Povezati sa js 555</span></h3>
+
+            <button class="btn-green add-to-cart" type="submit">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="related-products">
+        <h3 class="related-products__heading">Related products</h3>
+        <div class="item">
+            <div class="item__image">
+              <img id="product-image" src="img/products/accessories/pedometer/pedometer-product.jpg" alt="" />
+              <div class="item__image-show-item"><a href="#">Show Item</a></div>
+              <div class="item__image-chart">
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-cart-plus"></i
+                ></span>
+    
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item__description">
+              <a href="#">
+                <h3 class="item__description-name">Gift Silicone Sports Bracelet Digital Wristwatch Pedometer</h3></a
+              >
+              <a href="#"
+                ><h4 class="item__description-price">$ 0.69-0.79</h4></a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image">
+              <img src="img/products/accessories/back-shoulder-brace.jpg" alt="" />
+              <div class="item__image-show-item"><a href="#">Show Item</a></div>
+              <div class="item__image-chart">
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-cart-plus"></i
+                ></a>
+    
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item__description">
+              <a href="#">
+                <h3 class="item__description-name">Cruise Dual Analog</h3></a
+              >
+              <a href="#"
+                ><h4 class="item__description-price">$ 250.00</h4></a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image">
+              <img src="img/products/accessories/Ugreen_usb_3.0/Ugreen_usb.jpg" alt="" />
+              <div class="item__image-show-item"><a href="#">Show Item</a></div>
+              <div class="item__image-chart">
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-cart-plus"></i
+                ></a>
+    
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item__description">
+              <a href="#">
+                <h3 class="item__description-name">Ugreen USB 3.0 Cable Super Speed USB Extension Cable USB 2.0 Data Extender Lead</h3></a
+              >
+              <a href="#"
+                ><h4 class="item__description-price">$ 2.19</h4></a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image">
+              <img src="img/products/accessories/apple_iphone_8/apple_iphone_8.jpg" alt="" />
+              <div class="item__image-show-item"><a href="#">Show Item</a></div>
+              <div class="item__image-chart">
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-cart-plus"></i
+                ></a>
+    
+                <a class="item__image-icons" href="#"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item__description">
+              <a href="#">
+                <h3 class="item__description-name">Apple iPhone 8 Plus 64GB 256GB A1864 GSM Unlocked Smartphone All Colors</h3></a
+              >
+              <a href="#"
+                ><h4 class="item__description-price"><span>$ 839.99</h4></a
+              >
+            </div>
+          </div>
+      
+    
+        
+         
+    </section>
+
+    <footer class=" footer">
+      <div class="footer__intro">
+        <div class="footer__intro-heading">
+          We're confident we've provided the best for you. Stay connect with us
+        </div>
+        <div class="footer__intro-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__links-box">
+          <h2>Information</h2>
+          <ul>
+            <li><a href="#!">Delivery Information</a></li>
+            <li><a href="#!"> Discount</a></li>
+            <li><a href="#!">Sitemap</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">My Account</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-box">
+          <h2>My Account</h2>
+          <ul>
+            <li><a href="#!">Sign In</a></li>
+            <li><a href="#!">View Cart</a></li>
+            <li><a href="#!">My Wishlist</a></li>
+            <li><a href="#!">Check out</a></li>
+            <li><a href="#!">Track My Order</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-box">
+          <h2>Help</h2>
+          <ul>
+            <li><a href="#!">F.A.Q</a></li>
+            <li><a href="#!">Shipping</a></li>
+            <li><a href="#!">Contact Us</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links-box">
+          <h2>CONTACT INFO</h2>
+          <div class="contact-footer">
+            <p><span>A: </span> Carice Milice 40, 78000 Banja Luka</p>
+            <p><span>T: </span> (+387) 66 457 001</p>
+            <p><span>E:</span> info@infoshop.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <div class="copyright__wrap ">
+        <div class="copyright__intro">
+          <p>
+            &copy Copyright 2020 InfoShop. All rights reserved - Design by
+            Djordje Vasic
+          </p>
+        </div>
+        <div class="copyright__cards">
+          <a href="#"><img src="img/visa5.png" alt="Visa card"/></a>
+          <a href="#"><img src="img/paypal11.png" alt="Pay pal"/></a>
+          <a href="#"><img src="img/maestro1.png" alt="Maestro card"/></a>
+          <a href="#"><img src="img/amazon3.png" alt="Amazon"/></a>
+          <a href="#"><img src="img/card34.png" alt="Some card"/></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/components/product.js"></script>
+    <script src="js/components/increase-decrease.js"></script>
+    <script src="js/components/local-storage.js"></script>
+    <script src="js/components/cart-items-number.js"></script>
+  </body>
+</html>

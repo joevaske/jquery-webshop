@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid rgba($color-gray-light, 0.3);
+  background-color: rgba($color-gray-light, 0.1);
+  color: rgba($color-gray-light, 0.5);
+  padding: 1rem 2rem;
+  margin: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover,
+  &:active {
+    border: 2px solid rgba($color-green, 0.3);
+    color: rgba($color-green, 0.2);
+    background-color: rgba($color-white, 0.1);
+    transform: translateX(1px);
+  }
+}
+
+.btn-green {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: $color-green;
+  border: 1px solid rgba($color-green, 0.3);
+  color: $color-white;
+  cursor: pointer;
+}
+
+.btn-green:hover,
+.btn-green:active {
+  background-color: $color-blue;
+}
+
+.increment-button {
+  display: inline-block;
+  border: 1px solid $color-gray-lightest;
+  margin: 0px;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem 0;
+  background: #eee;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

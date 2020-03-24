@@ -1,0 +1,28 @@
+.product-cart__table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-cart__table td,
+.product-cart__table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.product-cart__table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.product-cart__table tr:hover {
+  background-color: #ddd;
+}
+
+.product-cart__table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+/*# sourceMappingURL=products-chart.css.map */

@@ -1,0 +1,51 @@
+.footer {
+  width: 80vw;
+  margin: 0 auto;
+  &__intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-gray-light;
+    font-size: 1.4rem;
+    font-weight: bold;
+    &-social a {
+      display: inline-block;
+      margin-left: 2rem;
+      font-size: 1.6rem;
+      @include respond(tab-port) {
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__links {
+    padding: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: $color-gray-light;
+    @include respond(tab-port) {
+      padding: 3rem 5rem;
+    }
+    &-box {
+      @include respond(tab-port) {
+        margin: 1rem;
+      }
+    }
+    & h2 {
+      color: $color-gray-dark;
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1.8rem;
+    }
+    & a,
+    & p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 3rem;
+    }
+    & a:hover {
+      color: $color-gray-dark;
+    }
+  }
+}

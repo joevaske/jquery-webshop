@@ -1,0 +1,13 @@
+.related-products {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: $margin-section;
+  &__heading {
+    font-size: 1.6rem;
+    flex-basis: 100%;
+    padding: 0 0 3rem 3rem;
+  }
+}

@@ -1,0 +1,28 @@
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem 4rem;
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 3rem 6rem;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  & a {
+    display: inline-block;
+  }
+  & a:not(:last-child) {
+    margin-right: 4rem;
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+}

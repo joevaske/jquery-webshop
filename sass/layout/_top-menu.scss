@@ -1,0 +1,45 @@
+.top-menu {
+  font-size: 1.2rem;
+  background-color: $color-black;
+  color: $color-gray-lightest;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.1rem 6.4rem 1rem 6.4rem;
+
+  @include respond(tab-port) {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    padding: 0.5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+
+    & i {
+      padding-top: 0.4rem;
+      padding-right: 1rem;
+    }
+    &-line {
+      padding: 0 1.6rem;
+    }
+  }
+
+  &__social {
+    @include respond(tab-port) {
+      display: none;
+    }
+    & i {
+      padding: 0 0.7rem;
+    }
+    & a {
+      color: $color-gray-lightest;
+    }
+    & a:hover {
+      color: $color-green;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.product {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: $margin-section;
+  &__slider {
+    margin-right: 5rem;
+    @include respond(phone) {
+      margin-right: 0;
+    }
+    &-image {
+      text-align: center;
+      & img {
+        width: 100%;
+      }
+    }
+    &-slide {
+      display: flex;
+      align-items: center;
+      &-left,
+      &-right {
+        margin: 0;
+        width: 6rem;
+        padding: 4rem 2rem;
+        background-color: $color-green;
+        color: $color-white;
+        font-size: 4rem;
+        cursor: pointer;
+        @include respond(phone) {
+          width: 4rem;
+          padding: 4rem 1rem;
+          font-size: 2rem;
+        }
+      }
+      &-images img {
+        width: 9rem;
+        height: 11rem;
+        margin: 0 1rem;
+        cursor: pointer;
+        @include respond(phone) {
+          width: 6rem;
+          height: 8rem;
+
+          margin: 0 0.3rem;
+        }
+      }
+    }
+  }
+  &__description {
+    width: 40%;
+    margin-top: 5rem;
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 90%;
+    }
+    &-text {
+      margin-bottom: 3rem;
+      &-name {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        &-id {
+          visibility: hidden;
+        }
+      }
+      &-price {
+        color: $color-green;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      &-content {
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
+        margin-bottom: $margin-section;
+        @include respond(tab-port) {
+          margin-bottom: $margin-section-phone;
+        }
+      }
+    }
+    &-selector {
+      font-size: 1.2rem;
+      font-weight: bold;
+      &-size {
+        width: 10rem;
+        padding: 0.6rem;
+        margin: 0 1rem 1rem 1.5rem;
+      }
+
+      &-total-price {
+        color: $color-green;
+        font-size: 2rem;
+        text-align: right;
+        font-weight: bold;
+        padding-right: 1rem;
+        border: 1px solid $color-gray-lightest;
+        margin: 2rem 0;
+
+        @include respond(phone) {
+          text-align: center;
+        }
+      }
+    }
+    //width: 40%;
+    //margin-left: 5rem;
+  }
+}

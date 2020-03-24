@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Gift Silicone Sports Bracelet Digital Wristwatch Pedometer",
+      "price": "0.79",
+      "description": "Sports Bracelet Digital id officia repudiandae quod nisi reiciendis minima, ex error perspiciatis non molestias quibusdam architecto nostrum, tenetur, possimus modi? Adipisci saepe inventore dolorum molestiae cupiditate optio ab magnam deleniti! A labore saepe ab iure corrupti et debitis minima reiciendis, ut quas eos officiis nobis rem delectus ratione voluptas asperiores, alias, veniam sed quae quod. Officia, ullam?",
+      "size": ["M", "L"],
+      "color": ["Black", "Gray"],
+      "images": [
+        "img/products/accessories/pedometer/pedometer-product.jpg",
+        "img/products/accessories/pedometer/pedometer-product-450x600.jpg",
+        "img/products/accessories/pedometer/pedometer-product-450x600-2.jpg",
+        "img/products/accessories/pedometer/pedometer-product-450x600-3.jpg",
+        "img/products/accessories/pedometer/pedometer-product-450x600-4.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ugreen USB 3.0 Cable Super Speed USB Extension Cable USB 2.0 Data Extender Lead",
+      "price": "2.19",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+      "size": ["2m", "5m", "6m"],
+      "color": ["Black", "Gray"],
+      "images": [
+        "img/products/accessories/Ugreen_usb_3.0/Ugreen_usb.jpg",
+        "img/products/accessories/Ugreen_usb_3.0/ugreen_usb_3.0-450x600.jpg",
+        "img/products/accessories/Ugreen_usb_3.0/ugreen_usb_3.0-450x600-2.jpg",
+        "img/products/accessories/Ugreen_usb_3.0/ugreen_usb_3.0-450x600-3.jpg",
+        "img/products/accessories/Ugreen_usb_3.0/ugreen_usb_3.0-450x600-4.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Mens Military T-Shirt Tactical Army Combat Shirt Casual Shirt Hiking Camouflage",
+      "price": "23.99",
+      "description": " Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+      "size": ["2m", "5m", "6m"],
+      "color": ["Black", "Gray"],
+      "images": [
+        "img/products/accessories/military_t-shirt/military_t-shirt.jpg",
+        "img/products/accessories/military_t-shirt/military_t-shirt-450x600.jpg",
+        "img/products/accessories/military_t-shirt/military_t-shirt-450x600-2.jpg",
+        "img/products/accessories/military_t-shirt/military_t-shirt-450x600-3.jpg"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Apple iPhone 8 Plus 64GB 256GB A1864 GSM Unlocked Smartphone All Colors",
+      "price": "839.99",
+      "description": " Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+      "size": ["2m", "5m", "6m"],
+      "color": ["Black", "Gray"],
+      "images": [
+        "img/products/accessories/apple_iphone_8/apple_iphone_8.jpg",
+        "img/products/accessories/apple_iphone_8/apple_iphone_8-450x600.jpg",
+        "img/products/accessories/apple_iphone_8/apple_iphone_8-450x600-2.jpg",
+        "img/products/accessories/apple_iphone_8/apple_iphone_8-450x600-3.jpg",
+        "img/products/accessories/apple_iphone_8/apple_iphone_8-450x600-4.jpg"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Back Posture Support Corrector Adjustable Shoulder Brace Therapy Men Women",
+      "price": "4.95",
+      "description": " Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+      "size": ["2m", "5m", "6m"],
+      "color": ["Black", "Gray"],
+      "images": [
+        "img/products/accessories/back-shoulder-brace/back-shoulder-brace.jpg",
+        "img/products/accessories/back-shoulder-brace/back-shoulder-brace-450x600-2.jpg",
+        "img/products/accessories/back-shoulder-brace/back-shoulder-brace-450x600-3.jpg",
+        "img/products/accessories/back-shoulder-brace/back-shoulder-brace-450x600-4.jpg",
+        "img/products/accessories/back-shoulder-brace/back-shoulder-brace-450x600-6.jpg"
+      ]
+    }
+  ]
+}

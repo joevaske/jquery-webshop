@@ -1,0 +1,78 @@
+.products-cart {
+  width: 80vw;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: $margin-section;
+  &__table-container {
+    overflow-x: auto;
+    margin-bottom: $margin-section-phone;
+  }
+  &__table {
+    width: 100%;
+    margin-bottom: $margin-section-phone;
+  }
+
+  & td,
+  & th {
+    border: 1px solid $color-green-light;
+    padding: 0 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: $color-gray-light;
+    padding: 0 1rem;
+  }
+  & td:nth-child(2) {
+    min-width: 30rem;
+    font-size: 1.2rem;
+  }
+  & td:nth-child(1) {
+    width: 9rem;
+    padding: 1rem;
+  }
+  & td:nth-child(4) {
+    width: 3rem;
+    text-align: center;
+  }
+  & td:nth-child(6) {
+    font-weight: bold;
+    color: $color-pink;
+    font-size: 1.2rem;
+    @include ease-02s;
+  }
+  & td:nth-child(6):hover {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $color-gray-dark;
+  }
+
+  & td:last-child:hover {
+    color: $color-pink;
+    animation: rotate-90 1s ease;
+  }
+
+  & img {
+    height: 11rem;
+  }
+  & tr:nth-child(even) {
+    background-color: $color-gray-lightest;
+  }
+  & tr:hover {
+    background-color: $color-green-light;
+  }
+
+  & th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

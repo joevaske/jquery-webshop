@@ -1,0 +1,23 @@
+.copyright {
+  background-color: $color-black;
+  color: $color-gray-light;
+  font-size: 1.2rem;
+  &__wrap {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+  &__cards {
+    padding-top: 0.4rem;
+    & img {
+      margin-left: 0.5rem;
+    }
+  }
+}

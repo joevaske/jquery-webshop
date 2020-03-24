@@ -1,0 +1,46 @@
+.discount {
+  width: 50vw;
+  padding: 5rem 5rem 5rem 10rem;
+  background-image: url("/img/subscribe-bg.png");
+  color: $color-white;
+  text-align: center;
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 5rem;
+  }
+  @include respond(phone) {
+    padding: 1rem;
+  }
+  &__heading {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: $color-gray-light;
+    @include respond(phone) {
+      letter-spacing: 0;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+    & input {
+      vertical-align: middle;
+      margin-right: 0.5rem;
+      padding: 1rem;
+      background-color: $color-white;
+      border: 1px solid $color-gray-light;
+    }
+  }
+}
